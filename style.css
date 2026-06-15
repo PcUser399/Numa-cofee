@@ -1153,54 +1153,54 @@ textarea.form-control {
   margin-bottom: 6px;
   font-size: 0.95rem;
 }
+.info-box a {
+  color: var(--palette-wine);
+  font-weight: 700;
+  text-decoration: none;
+}
+.info-box a:hover {
+  text-decoration: underline;
+}
 
-.map-placeholder {
+.map-card {
   border-radius: var(--border-radius-md);
   overflow: hidden;
-  height: 200px;
-  position: relative;
-  background: #ECE5DC;
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
+}
+.map-frame {
+  display: block;
+  width: 100%;
+  height: 260px;
+  background: #ECE5DC;
+}
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map-directions-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 24px;
-}
-.map-bg-pattern {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.12;
-  background: radial-gradient(rgba(86, 28, 36, 0.4) 10%, transparent 10%);
-  background-size: 20px 20px;
-}
-.map-marker {
+  gap: 8px;
+  padding: 18px 20px;
   color: var(--palette-wine);
-  position: relative;
-  z-index: 2;
-  animation: float-gentle 4s ease-in-out infinite;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background: var(--bg-card);
 }
-.map-marker svg {
-  width: 36px;
-  height: 36px;
-}
-.map-info {
-  position: relative;
-  z-index: 2;
-  margin-top: 10px;
-}
-.map-info h5 {
-  font-size: 1.05rem;
+.map-directions-link:hover {
   color: var(--palette-dark-burgundy);
-  margin-bottom: 4px;
+  background: var(--bg-secondary);
 }
-.map-info p {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+.map-directions-link svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
 }
 
 /* --- Shopping Cart Drawer --- */
