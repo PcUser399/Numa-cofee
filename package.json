@@ -1,0 +1,20 @@
+{
+  "name": "numa-coffee-kitchen",
+  "version": "1.0.0",
+  "description": "Artisanal web experience for Nüma Coffee Kitchen.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 3000 -c-1"
+  },
+  "keywords": [
+    "coffee",
+    "cafe",
+    "modern",
+    "aesthetic"
+  ],
+  "author": "Nüma Barista Team",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

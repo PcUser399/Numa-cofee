@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nüma Coffee Kitchen | Café Artisanal & Cuisine</title>
+  <meta name="description" content="Bienvenue chez Nüma Coffee Kitchen. Découvrez l'espresso artisanal, les cafés filtres signatures, les pâtisseries fraîches et les plats chauds dans un espace moderne et chaleureux.">
+  <meta name="keywords" content="Nüma Coffee Kitchen, café artisanal, boulangerie, petit-déjeuner, bar à espresso, café de spécialité, café biologique">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header">
+    <div class="container navbar-container">
+      <!-- Logo -->
+      <a href="#" class="logo" id="nav-logo" aria-label="Accueil Nüma Coffee Kitchen">
+        <div class="logo-icon">
+          <!-- Steaming Coffee Mug SVG -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+            <line x1="6" y1="2" x2="6" y2="4"></line>
+            <line x1="10" y1="2" x2="10" y2="4"></line>
+            <line x1="14" y1="2" x2="14" y2="4"></line>
+          </svg>
+        </div>
+        <div class="logo-text">
+          N&Uuml;MA
+          <span>Coffee Kitchen</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav aria-label="Navigation Principale">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#" class="active" id="link-home">Accueil</a></li>
+          <li><a href="#quiz-section" id="link-quiz">Trouver Mon Café</a></li>
+          <li><a href="#menu-section" id="link-menu">Menu</a></li>
+          <li><a href="#space-section" id="link-space">Notre Espace</a></li>
+          <li><a href="#contact-section" id="link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Cart Trigger -->
+        <button class="cart-trigger" id="cart-btn" aria-label="Ouvrir le Panier">
+          <!-- Shopping Bag SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count" id="cart-badge">0</span>
+        </button>
+
+        <a href="#menu-section" class="btn btn-primary btn-sm btn-nav-order" id="nav-order-btn">Commander</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Basculer le Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Ouvert : Sur Place & ì Emporter
+        </div>
+        <h1>Où l'Artisanat <br><span class="highlight">Rencontre la Cuisine</span></h1>
+        <p>Entrez chez Nüma Coffee Kitchen. Nous torréfions avec intention et cuisinons avec passion. Découvrez un espresso d'origine unique et des plats artisanaux conçus pour illuminer votre journée.</p>
+        <div class="hero-buttons">
+          <a href="#menu-section" class="btn btn-primary" id="hero-menu-cta">Explorer le Menu</a>
+          <a href="#quiz-section" class="btn btn-secondary" id="hero-quiz-cta">Trouver Votre Café</a>
+        </div>
+      </div>
+      <div class="hero-media reveal reveal-delay-2">
+        <!-- Steam Animation -->
+        <div class="steam-container">
+          <div class="steam-line"></div>
+          <div class="steam-line"></div>
+          <div class="steam-line"></div>
+        </div>
+        
+        <!-- Rotating Aesthetic Stamp -->
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero.png" alt="Latte Art Artisanal dans une Tasse en Céramique chez Nüma Coffee Kitchen" class="hero-img" id="hero-image" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22500%22 viewBox=%220 0 500 500%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23E8D8C4%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2228%22 fill=%22%23561C24%22>Art du Café Nüma</text></svg>'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COFFEE FINDER QUIZ SECTION -->
+  <section class="quiz-section section-padding" id="quiz-section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="subtitle">Expérience Personnalisée</span>
+        <h2>Trouvez Votre Café Idéal</h2>
+        <p>Indiquez-nous vos préférences gustatives, et notre algorithme vous recommandera la boisson idéale de notre bar.</p>
+      </div>
+
+      <div class="quiz-container reveal reveal-delay-1" id="quiz-widget">
+        <!-- Progress Bar -->
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quiz-progress"></div>
+        </div>
+
+        <!-- STEP 1: MORNING MOOD -->
+        <div class="quiz-step active" data-step="1">
+          <h3>1. Choisissez votre humeur matinale :</h3>
+          <div class="quiz-options">
+            <div class="quiz-card" data-key="mood" data-value="bold" id="quiz-q1-o1">
+              <div class="quiz-card-icon">&#9749;</div>
+              <h4>Audacieux & Concentré</h4>
+              <p>Des notes de café fortes et intenses pour recharger votre matinée.</p>
+            </div>
+            <div class="quiz-card" data-key="mood" data-value="sweet" id="quiz-q1-o2">
+              <div class="quiz-card-icon">&#129380;</div>
+              <h4>Doux & Crémeux</h4>
+              <p>Des mélanges de latte onctueux avec des notes de sirops chauds.</p>
+            </div>
+            <div class="quiz-card" data-key="mood" data-value="light" id="quiz-q1-o3">
+              <div class="quiz-card-icon">&#127807;</div>
+              <h4>Léger & Frais</h4>
+              <p>Des alternatives rafraîchissantes, florales ou infusées au thé glacé.</p>
+            </div>
+          </div>
+          <div class="quiz-nav">
+            <span></span>
+            <button class="btn btn-primary btn-sm btn-quiz-next" disabled id="quiz-next-1">&Eacute;tape Suivante</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: FLAVOR PROFILE -->
+        <div class="quiz-step" data-step="2">
+          <h3>2. Choisissez une note de saveur qui vous parle :</h3>
+          <div class="quiz-options">
+            <div class="quiz-card" data-key="flavor" data-value="nutty" id="quiz-q2-o1">
+              <div class="quiz-card-icon">&#127851;</div>
+              <h4>Noix & Chocolaté</h4>
+              <p>Amande grillée, cacao noir ou riche caramel à l'érable.</p>
+            </div>
+            <div class="quiz-card" data-key="flavor" data-value="fruity" id="quiz-q2-o2">
+              <div class="quiz-card-icon">&#127818;</div>
+              <h4>Vif & Zesté</h4>
+              <p>&Eacute;corce d'agrumes, baies fraîches ou douce douceur de miel.</p>
+            </div>
+            <div class="quiz-card" data-key="flavor" data-value="spicy" id="quiz-q2-o3">
+              <div class="quiz-card-icon">&#127801;</div>
+              <h4>Floral & Herbacé</h4>
+              <p>Notes de cardamome, pétales de rose ou thé vert pur.</p>
+            </div>
+          </div>
+          <div class="quiz-nav">
+            <button class="btn btn-secondary btn-sm btn-quiz-prev" id="quiz-prev-2">Retour</button>
+            <button class="btn btn-primary btn-sm btn-quiz-next" disabled id="quiz-next-2">&Eacute;tape Suivante</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: DAIRY PREFERENCE -->
+        <div class="quiz-step" data-step="3">
+          <h3>3. Choisissez votre base liquide :</h3>
+          <div class="quiz-options">
+            <div class="quiz-card" data-key="base" data-value="dairy" id="quiz-q3-o1">
+              <div class="quiz-card-icon">&#129380;</div>
+              <h4>Lait Entier</h4>
+              <p>Texture laitière crémeuse standard qui met en valeur les sucres du lait.</p>
+            </div>
+            <div class="quiz-card" data-key="base" data-value="oat" id="quiz-q3-o2">
+              <div class="quiz-card-icon">&#127806;</div>
+              <h4>Lait d'Avoine Barista</h4>
+              <p>Texture de micro-mousse naturellement douce, au goût de noisette et soyeuse.</p>
+            </div>
+            <div class="quiz-card" data-key="base" data-value="black" id="quiz-q3-o3">
+              <div class="quiz-card-icon">&#128167;</div>
+              <h4>Eau / Noir</h4>
+              <p>Eau pure, tonique pétillant ou sans produit laitier ajouté.</p>
+            </div>
+          </div>
+          <div class="quiz-nav">
+            <button class="btn btn-secondary btn-sm btn-quiz-prev" id="quiz-prev-3">Retour</button>
+            <button class="btn btn-primary btn-sm btn-quiz-finish" disabled id="quiz-finish-btn">Trouver Mon Café</button>
+          </div>
+        </div>
+
+        <!-- STEP 4: QUIZ RESULT -->
+        <div class="quiz-step" data-step="4">
+          <div class="quiz-result-layout" id="quiz-result-content">
+            <div class="quiz-result-img-wrapper">
+              <img src="assets/images/signature-latte.jpg" alt="Votre Boisson Recommandée Nüma" class="quiz-result-img" id="quiz-result-image" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22350%22 viewBox=%220 0 300 350%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2222%22 fill=%22%23561C24%22>Signature Nüma</text></svg>'">
+            </div>
+            <div class="quiz-result-details">
+              <h4 id="quiz-result-badge">Correspondance Parfaite</h4>
+              <h3 id="quiz-result-title">Latte &Eacute;rable Pacane Nüma</h3>
+              <p id="quiz-result-desc">Un double espresso combiné avec du sirop d'érable noir, de l'extrait de pacane grillée et du lait d'avoine biologique, avec une touche de cannelle fraîche.</p>
+              <div class="quiz-result-tags">
+                <span class="quiz-result-tag" id="quiz-result-tag1">Chaud/Froid</span>
+                <span class="quiz-result-tag" id="quiz-result-tag2">Espresso</span>
+              </div>
+              <div style="display: flex; gap: 14px;">
+                <button class="btn btn-primary" id="quiz-add-cart-btn">Ajouter à la Commande (<span id="quiz-result-price">6.25 TND</span>)</button>
+                <button class="btn btn-secondary" id="quiz-retry-btn">Réessayer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTISANAL MENU SECTION -->
+  <section class="menu-section section-padding" id="menu-section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="subtitle">Du Bar & Du Foyer</span>
+        <h2>Le Menu de la Cuisine</h2>
+        <p>Classiques de café sélectionnés, mélanges signatures créatifs et plats biologiques frais préparés quotidiennement.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="menu-tabs reveal reveal-delay-1" role="tablist">
+        <button class="menu-tab active" data-filter="all" role="tab" aria-selected="true" id="filter-all">Tous les Articles</button>
+        <button class="menu-tab" data-filter="coffee" role="tab" aria-selected="false" id="filter-coffee">Espresso Artisanal</button>
+        <button class="menu-tab" data-filter="signature" role="tab" aria-selected="false" id="filter-signature">Signatures</button>
+        <button class="menu-tab" data-filter="bakery" role="tab" aria-selected="false" id="filter-bakery">Boulangerie Artisanale</button>
+        <button class="menu-tab" data-filter="eats" role="tab" aria-selected="false" id="filter-eats">Plats Chauds</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid reveal reveal-delay-2" id="menu-grid">
+        <!-- JavaScript will populate items, structure fallback included for rendering -->
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR COZY SPACE SECTION -->
+  <section class="space-section section-padding" id="space-section">
+    <div class="container space-grid">
+      <div class="space-content reveal">
+        <span class="subtitle" style="color: var(--palette-cream)">Notre Sanctuaire</span>
+        <h3>Conçu pour Susciter la Créativité</h3>
+        <p>Nüma Coffee Kitchen est conçu pour être un sanctuaire physique. Construit avec des argiles brutes et terreuses, des accents de bois poli et des lanternes en cuivre à faible luminosité, notre espace est optimisé pour les longues sessions d'étude, les réunions décontractées ou les moments calmes.</p>
+        
+        <ul class="space-highlights">
+          <li>
+            <!-- Check SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Espaces de travail calmes avec bornes de recharge et WiFi fibre haut débit
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Torréfaction quotidienne sur notre micro-torréfacteur allemand
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Environnements traités acoustiquement pour maintenir un volume doux
+          </li>
+        </ul>
+
+        <a href="#contact-section" class="btn btn-light" id="space-reserve-cta">Trouver l'Emplacement</a>
+      </div>
+      <div class="gallery-grid reveal reveal-delay-2">
+        <div class="gallery-item">
+          <img src="assets/images/cafe-interior.jpg" alt="Sièges confortables dans le coin de Nüma Coffee Kitchen" class="gallery-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22250%22 viewBox=%220 0 300 250%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236D2932%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2218%22 fill=%22%23E8D8C4%22>Bar à Espresso</text></svg>'">
+          <div class="gallery-overlay">
+            <h4>Le Bar à Espresso</h4>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/signature-latte.jpg" alt="Processus de Brassage du Café Signature chez Nüma" class="gallery-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22250%22 viewBox=%220 0 300 250%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2218%22 fill=%22%231F0709%22>Station de Versement</text></svg>'">
+          <div class="gallery-overlay">
+            <h4>Stations de Versement Lent</h4>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/pastry.jpg" alt="Pâtisseries artisanales reposant dans la vitrine de Nüma" class="gallery-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22250%22 viewBox=%220 0 300 250%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2218%22 fill=%22%231F0709%22>Boulangerie Fraîche</text></svg>'">
+          <div class="gallery-overlay">
+            <h4>Boulangerie du Foyer</h4>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/brunch.jpg" alt="Un plat culinaire frais préparé dans notre cuisine" class="gallery-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22250%22 viewBox=%220 0 300 250%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236D2932%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2218%22 fill=%22%23E8D8C4%22>Cuisine Chaude</text></svg>'">
+          <div class="gallery-overlay">
+            <h4>Table de Cuisine</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="reviews-section section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="subtitle">Mots Doux</span>
+        <h2>Ce Que Dit Notre Communauté</h2>
+        <p>Nous sommes reconnaissants envers nos visiteurs réguliers qui transforment notre maison en foyer.</p>
+      </div>
+
+      <div class="reviews-carousel-wrapper reveal reveal-delay-1" id="reviews-slider">
+        <div class="reviews-carousel" id="reviews-carousel-track">
+          <!-- Slide 1 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="review-stars">
+                <!-- 5 Stars SVGs -->
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="review-text">"Le Latte &Eacute;rable Pacane chez Nüma est facilement la meilleure boisson signature de la ville. Ce n'est pas trop sucré, et les notes de pacane grillée s'alignent parfaitement avec leur lait d'avoine. L'intérieur est aussi un chef-d'&oelig;uvre."</p>
+              <div class="review-author">
+                <div class="review-author-avatar">SC</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">Sophia Chen</div>
+                  <div class="review-author-title">Designer Locale & Habituée</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="review-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="review-text">"En tant que critique autoproclamé de levain, la Tartine à l'Avocat a dépassé toutes mes attentes. Une croûte parfaitement toastée, un confit de tomates savoureux et un &oelig;uf de ferme riche. Accompagné d'un espresso, c'est le brunch absolument parfait."</p>
+              <div class="review-author">
+                <div class="review-author-avatar">MB</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">Marcus Brooks</div>
+                  <div class="review-author-title">Journaliste Culinaire</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="review-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="review-text">"J'apporte mon ordinateur portable ici presque tous les mardis. Les boiseries acoustiques atténuent parfaitement le bruit ambiant, le personnel du bar est chaleureux et rapide, et leur tonique à l'infusion à froid est incroyablement unique !"</p>
+              <div class="review-author">
+                <div class="review-author-avatar">HL</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">Hannah Lee</div>
+                  <div class="review-author-title">Ingénieure Logiciel à Distance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-dots" id="carousel-dots">
+          <span class="carousel-dot active" data-index="0" role="button" aria-label="Aller au témoignage 1"></span>
+          <span class="carousel-dot" data-index="1" role="button" aria-label="Aller au témoignage 2"></span>
+          <span class="carousel-dot" data-index="2" role="button" aria-label="Aller au témoignage 3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & HOURS SECTION -->
+  <section class="contact-section section-padding" id="contact-section">
+    <div class="container contact-grid">
+      
+      <!-- Interactive Contact Form -->
+      <div class="contact-card reveal">
+        <h3>Laissez-nous un Message</h3>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Nom Complet</label>
+            <input type="text" id="contact-name" class="form-control" placeholder="Jeanne Dupont" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Adresse E-mail</label>
+            <input type="email" id="contact-email" class="form-control" placeholder="jeanne@exemple.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Comment pouvons-nous vous aider ?</label>
+            <textarea id="contact-message" class="form-control" placeholder="Parlez-nous de votre événement, de vos questions ou de vos retours..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-submit">Envoyer le Message</button>
+        </form>
+      </div>
+
+      <!-- Info & Mock Map -->
+      <div class="contact-info-panel reveal reveal-delay-2">
+        <div class="info-box">
+          <h4>
+            <!-- Clock SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Heures d'Ouverture
+          </h4>
+          <p><strong>Lundi - Vendredi :</strong> 6h30 - 18h00</p>
+          <p><strong>Samedi - Dimanche :</strong> 7h30 - 17h00</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">* Les commandes de cuisine ferment 30 minutes avant la fermeture du bar.</p>
+        </div>
+
+        <div class="info-box">
+          <h4>
+            <!-- Phone SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Contactez-nous
+          </h4>
+          <p><strong>Appelez-nous :</strong> (555) 321-NUMA</p>
+          <p><strong>E-mail :</strong> bonjour@numakitchen.com</p>
+        </div>
+
+        <!-- Styled SVG Mockup Map -->
+        <div class="map-placeholder">
+          <div class="map-bg-pattern"></div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="map-marker">
+              <!-- Pin SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="map-info">
+              <h5>Nüma Coffee Kitchen</h5>
+              <p>404 Rue Hearthstone, Suite A</p>
+              <p>Quartier des Arts</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SHOPPING CART SLIDE DRAWER -->
+  <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Panier d'Achat">
+    
+    <!-- Success checkout modal screen -->
+    <div class="success-modal" id="checkout-success-modal">
+      <div class="success-icon">
+        <!-- Shield Check SVG -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 11 11 13 15 9"></polyline>
+        </svg>
+      </div>
+      <h4>Commande Envoyée à la Cuisine !</h4>
+      <p>Merci d'avoir commandé chez Nüma. Votre barista prépare actuellement vos boissons et plats. Récupérez-les au bar dans 10 à 15 minutes.</p>
+      <button class="btn btn-primary" id="checkout-close-success">Terminé</button>
+    </div>
+
+    <div class="cart-header">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Votre Commande
+      </h3>
+      <button class="cart-close-btn" id="cart-close" aria-label="Fermer le Panier">
+        <!-- Close (X) SVG -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Scrollable Items Container -->
+    <div class="cart-items" id="cart-items-container">
+      <!-- Empty Cart View -->
+      <div class="cart-empty-view" id="cart-empty-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+          <line x1="6" y1="2" x2="6" y2="4"></line>
+          <line x1="10" y1="2" x2="10" y2="4"></line>
+          <line x1="14" y1="2" x2="14" y2="4"></line>
+        </svg>
+        <p>Votre panier est actuellement vide.</p>
+        <a href="#menu-section" class="btn btn-secondary btn-sm" id="cart-empty-shop-cta">Parcourir le Menu</a>
+      </div>
+      
+      <!-- List elements will be injected here by app.js -->
+    </div>
+
+    <!-- Cart Footer Details -->
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-totals-row">
+        <span>Sous-total</span>
+        <span id="cart-subtotal">0.00 TND</span>
+      </div>
+      <div class="cart-totals-row">
+        <span>Taxe Est. (8%)</span>
+        <span id="cart-tax">0.00 TND</span>
+      </div>
+      <div class="cart-totals-row total">
+        <span>Total à Payer</span>
+        <span id="cart-total">0.00 TND</span>
+      </div>
+      <button class="btn btn-primary" style="width: 100%;" id="checkout-btn">Finaliser la Commande</button>
+    </div>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>N&Uuml;MA</h3>
+        <p>Un café-cuisine artisanal dédié aux grains biologiques d'origine unique, aux plats lents au levain et aux espaces de travail esthétiques et paisibles.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explorer</h4>
+        <ul class="footer-links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#quiz-section">Trouver Mon Café</a></li>
+          <li><a href="#menu-section">Menu de la Cuisine</a></li>
+          <li><a href="#space-section">Le Sanctuaire</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Politique de Confidentialité</a></li>
+          <li><a href="#">Conditions de Service</a></li>
+          <li><a href="#">Retrait & Retours</a></li>
+          <li><a href="#">Contacter le Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Nouvelles du Foyer</h4>
+        <p>Abonnez-vous pour recevoir des mises à jour de torréfaction, des secrets de menu saisonnier et des invitations exclusives.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="vous@exemple.com" aria-label="Adresse e-mail pour la newsletter" required>
+          <button type="submit" class="newsletter-btn" aria-label="S'abonner">
+            <!-- Arrow Right SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Nüma Coffee Kitchen. Conçu pour l'excellence visuelle et la saveur premium. Tous droits réservés.</p>
+      <ul class="footer-bottom-links">
+        <li><a href="#">Accessibilité</a></li>
+        <li><a href="#">Traiteur</a></li>
+        <li><a href="#">Carrières</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
