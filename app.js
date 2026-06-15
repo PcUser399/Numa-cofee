@@ -343,100 +343,19 @@ const MENU_ITEMS = [
     image: "assets/images/chicken-waffle.jpg"
   },
   {
-    id: "marky-stamp-green",
-    name: "Tampon Textile MARKY - Vert",
-    category: "arts-crafts",
-    price: 55.00,
-    description: "Le tampon textile personnalisable MARKY en coloris vert. Livré avec un set de caractères (lettres, chiffres, pictos), une bande thermocollante et une pince.",
-    tags: ["Tampon", "Personnalisable"],
-    badge: "Populaire",
-    image: "assets/images/marky-stamp.png"
-  },
-  {
-    id: "marky-stamp-pink",
-    name: "Tampon Textile MARKY - Rose",
-    category: "arts-crafts",
-    price: 55.00,
-    description: "Le tampon textile personnalisable MARKY en coloris rose. Livré avec un set de caractères (lettres, chiffres, pictos), une bande thermocollante et une pince.",
-    tags: ["Tampon", "Personnalisable"],
-    badge: "Populaire",
-    image: "assets/images/marky-stamp.png"
-  },
-  {
-    id: "marky-stamp-blue",
-    name: "Tampon Textile MARKY - Bleu",
-    category: "arts-crafts",
-    price: 55.00,
-    description: "Le tampon textile personnalisable MARKY en coloris bleu. Livré avec un set de caractères (lettres, chiffres, pictos), une bande thermocollante et une pince.",
-    tags: ["Tampon", "Personnalisable"],
-    badge: "Populaire",
-    image: "assets/images/marky-stamp.png"
-  },
-  {
-    id: "marky-refill-kit",
-    name: "Kit de Recharge MARKY",
-    category: "arts-crafts",
-    price: 30.00,
-    description: "Recharge complète contenant 1 cassette d'encre noire (1000 empreintes), 1m de bande thermocollante et 40 étiquettes adhésives.",
-    tags: ["Accessoires", "Recharge"],
-    badge: "Indispensable",
-    image: "data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22 viewBox=%220 0 300 200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2220%22 fill=%22%23561C24%22>Kit Recharge MARKY</text></svg>"
-  },
-  {
-    id: "marky-pen-labels",
-    name: "Étiquettes Stylos MARKY",
-    category: "arts-crafts",
-    price: 18.00,
-    description: "96 étiquettes autocollantes (10 x 42 mm) en 12 coloris pastels. Papier recyclé, séchage instantané et imperméables.",
-    tags: ["Étiquettes", "Scolaire"],
-    badge: "Nouveau",
-    image: "data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22 viewBox=%220 0 300 200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2220%22 fill=%22%23561C24%22>&Eacute;tiquettes Stylos</text></svg>"
-  },
-  {
-    id: "marky-dishwasher-labels",
-    name: "Étiquettes Lave-Vaisselle MARKY",
-    category: "arts-crafts",
-    price: 18.00,
-    description: "Étiquettes adhésives ultra-résistantes pour gourdes, boîtes à goûter, verres, etc. Résistent au lave-vaisselle, micro-ondes et congélateur.",
-    tags: ["Étiquettes", "Résistant"],
-    badge: "Pratique",
-    image: "data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22 viewBox=%220 0 300 200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2220%22 fill=%22%23561C24%22>&Eacute;tiquettes Lave-Vaisselle</text></svg>"
-  },
-  {
-    id: "marky-backpack",
-    name: "Sac à Dos Enfant MARKY",
-    category: "arts-crafts",
-    price: 120.00,
-    description: "Sac à dos ergonomique avec rembourrage dorsal respirant, éléments réfléchissants et matière déperlante. Personnalisable avec badge velcro.",
-    tags: ["Accessoires", "Ergonomique"],
-    badge: "Premium",
-    image: "data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22 viewBox=%220 0 300 200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2220%22 fill=%22%23561C24%22>Sac &agrave; Dos MARKY</text></svg>"
-  },
-  {
-    id: "marky-pencil-case",
-    name: "Trousse Silicone MARKY",
-    category: "arts-crafts",
-    price: 36.00,
-    description: "Trousse en silicone durable et imperméable. Base extensible pour plus de rangement. Zippée avec étiquette personnalisable par tampon.",
-    tags: ["Accessoires", "Silicone"],
-    badge: "Tendance",
-    image: "data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22 viewBox=%220 0 300 200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2220%22 fill=%22%23561C24%22>Trousse Silicone</text></svg>"
-  },
-  {
-    id: "marky-sos-wristbands",
-    name: "Bracelets de Sécurité SOS MARKY",
-    category: "arts-crafts",
-    price: 18.00,
-    description: "20 bracelets SOS colorés pour enfants. Résistent aux UV et à l'eau salée. Livrés avec un feutre permanent imperméable.",
-    tags: ["Sécurité", "Bracelets"],
-    badge: "Sécurité",
-    image: "data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22 viewBox=%220 0 300 200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22serif%22 font-size=%2220%22 fill=%22%23561C24%22>Bracelets SOS</text></svg>"
+    id: "breakfast-wrap",
+    name: "Wrap Petit-Déjeuner",
+    category: "eats",
+    price: 10.00,
+    description: "Wrap chaud garni d'œufs brouillés moelleux, de fromage fondu et d'oignons rouges marinés pour une touche acidulée.",
+    tags: ["Matin", "Chaud"],
+    badge: "À Emporter",
+    image: "assets/images/breakfast-wrap.jpg"
   }
 ];
 
 // --- APP STATE ---
 let cart = [];
-
 let quizAnswers = { mood: '', flavor: '', base: '' };
 let currentSlide = 0;
 let slideInterval;
@@ -498,33 +417,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Populate Menu
-  if (menuGrid) {
-    renderMenuItems('all');
-  }
-
-  // Bind any elements with data-add-to-cart on initialization
-  document.querySelectorAll('[data-add-to-cart]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const itemId = btn.getAttribute('data-add-to-cart');
-      addToCart(itemId);
-    });
-  });
-
-  // Mobile navigation dropdown toggle
-  document.querySelectorAll('.nav-dropdown > a').forEach(dropdownToggle => {
-    dropdownToggle.addEventListener('click', (e) => {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        const parent = dropdownToggle.parentElement;
-        parent.classList.toggle('open-mobile');
-      }
-    });
-  });
+  renderMenuItems('all');
 
   // Start Slideshow
-  if (reviewsCarouselTrack) {
-    startCarouselTimer();
-  }
+  startCarouselTimer();
 
   // Setup Observers
   setupScrollReveal();
@@ -532,39 +428,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- HEADER SCROLL STYLES ---
 window.addEventListener('scroll', () => {
-  if (header) {
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
+  if (window.scrollY > 40) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
   }
 });
 
 // --- MOBILE MENU ---
-if (mobileToggle && navLinks) {
-  mobileToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.contains('open');
-    if (isOpen) {
-      navLinks.classList.remove('open');
-      mobileToggle.classList.remove('open');
-      mobileToggle.setAttribute('aria-expanded', 'false');
-    } else {
-      navLinks.classList.add('open');
-      mobileToggle.classList.add('open');
-      mobileToggle.setAttribute('aria-expanded', 'true');
-    }
-  });
-}
+mobileToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.contains('open');
+  if (isOpen) {
+    navLinks.classList.remove('open');
+    mobileToggle.classList.remove('open');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+  } else {
+    navLinks.classList.add('open');
+    mobileToggle.classList.add('open');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+  }
+});
 
 // Close Mobile Menu on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
-    if (navLinks) navLinks.classList.remove('open');
-    if (mobileToggle) {
-      mobileToggle.classList.remove('open');
-      mobileToggle.setAttribute('aria-expanded', 'false');
-    }
+    navLinks.classList.remove('open');
+    mobileToggle.classList.remove('open');
+    mobileToggle.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -611,7 +501,6 @@ function showToast(message, type = 'default') {
 
 // --- MENU FILTER ENGINE ---
 function renderMenuItems(filter) {
-  if (!menuGrid) return;
   menuGrid.innerHTML = '';
   
   const filtered = filter === 'all' 
@@ -686,23 +575,21 @@ menuTabs.forEach(tab => {
 // --- SHOPPING CART LOGIC ---
 
 // Open / Close Drawer
-if (cartBtn) {
-  cartBtn.addEventListener('click', () => {
-    if (cartDrawer) cartDrawer.classList.add('open');
-    if (cartBackdrop) cartBackdrop.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Lock background scroll
-  });
-}
+cartBtn.addEventListener('click', () => {
+  cartDrawer.classList.add('open');
+  cartBackdrop.classList.add('open');
+  document.body.style.overflow = 'hidden'; // Lock background scroll
+});
 
 const closeCart = () => {
-  if (cartDrawer) cartDrawer.classList.remove('open');
-  if (cartBackdrop) cartBackdrop.classList.remove('open');
+  cartDrawer.classList.remove('open');
+  cartBackdrop.classList.remove('open');
   document.body.style.overflow = '';
-  if (checkoutSuccessModal) checkoutSuccessModal.classList.remove('active');
+  checkoutSuccessModal.classList.remove('active');
 };
 
-if (cartClose) cartClose.addEventListener('click', closeCart);
-if (cartBackdrop) cartBackdrop.addEventListener('click', closeCart);
+cartClose.addEventListener('click', closeCart);
+cartBackdrop.addEventListener('click', closeCart);
 
 // Core Add/Modify Operations
 function addToCart(itemId) {
@@ -720,10 +607,8 @@ function addToCart(itemId) {
   updateCartUI();
   
   // Highlight Cart Icon
-  if (cartBtn) {
-    cartBtn.classList.add('pop');
-    setTimeout(() => cartBtn.classList.remove('pop'), 300);
-  }
+  cartBtn.classList.add('pop');
+  setTimeout(() => cartBtn.classList.remove('pop'), 300);
 
   showToast(`Ajouté ${item.name} à votre commande !`, 'success');
 }
@@ -759,63 +644,59 @@ function saveCart() {
 function updateCartUI() {
   // Update Badge Count
   const totalQty = cart.reduce((acc, curr) => acc + curr.qty, 0);
-  if (cartBadge) {
-    cartBadge.innerText = totalQty;
-    if (totalQty > 0) {
-      cartBadge.classList.add('pop');
-    } else {
-      cartBadge.classList.remove('pop');
-    }
+  cartBadge.innerText = totalQty;
+  if (totalQty > 0) {
+    cartBadge.classList.add('pop');
+  } else {
+    cartBadge.classList.remove('pop');
   }
 
   // Populate Lists
-  if (cartItemsContainer) {
-    const itemsList = cartItemsContainer.querySelectorAll('.cart-item');
-    itemsList.forEach(item => item.remove());
+  const itemsList = cartItemsContainer.querySelectorAll('.cart-item');
+  itemsList.forEach(item => item.remove());
 
-    if (cart.length === 0) {
-      if (cartEmptyState) cartEmptyState.style.display = 'flex';
-      if (cartFooter) cartFooter.style.display = 'none';
-    } else {
-      if (cartEmptyState) cartEmptyState.style.display = 'none';
-      if (cartFooter) cartFooter.style.display = 'block';
+  if (cart.length === 0) {
+    cartEmptyState.style.display = 'flex';
+    cartFooter.style.display = 'none';
+  } else {
+    cartEmptyState.style.display = 'none';
+    cartFooter.style.display = 'block';
 
-      cart.forEach(cartItem => {
-        const { item, qty } = cartItem;
-        const element = document.createElement('div');
-        element.className = 'cart-item';
-        element.innerHTML = `
-          <div class="cart-item-img-wrapper">
-            <img src="${item.image}" alt="${item.name}" class="cart-item-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2270%22 height=%2270%22 viewBox=%220 0 70 70%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/></svg>'">
-          </div>
-          <div class="cart-item-info">
-            <div class="cart-item-title">${item.name}</div>
-            <div class="cart-item-price">${(item.price * qty).toFixed(2)} TND</div>
-            <div class="cart-item-actions">
-              <div class="quantity-selector">
-                <button class="qty-btn dec-qty" data-id="${item.id}">-</button>
-                <span class="qty-val">${qty}</span>
-                <button class="qty-btn inc-qty" data-id="${item.id}">+</button>
-              </div>
-              <button class="cart-item-remove-btn remove-btn" data-id="${item.id}">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="3 6 5 6 21 6"></polyline>
-                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                </svg>
-                Retirer
-              </button>
+    cart.forEach(cartItem => {
+      const { item, qty } = cartItem;
+      const element = document.createElement('div');
+      element.className = 'cart-item';
+      element.innerHTML = `
+        <div class="cart-item-img-wrapper">
+          <img src="${item.image}" alt="${item.name}" class="cart-item-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2270%22 height=%2270%22 viewBox=%220 0 70 70%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23C7B7A3%22/></svg>'">
+        </div>
+        <div class="cart-item-info">
+          <div class="cart-item-title">${item.name}</div>
+          <div class="cart-item-price">${(item.price * qty).toFixed(2)} TND</div>
+          <div class="cart-item-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn dec-qty" data-id="${item.id}">-</button>
+              <span class="qty-val">${qty}</span>
+              <button class="qty-btn inc-qty" data-id="${item.id}">+</button>
             </div>
+            <button class="cart-item-remove-btn remove-btn" data-id="${item.id}">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              Retirer
+            </button>
           </div>
-        `;
+        </div>
+      `;
 
-        // Event listeners
-        element.querySelector('.dec-qty').addEventListener('click', () => updateQty(item.id, -1));
-        element.querySelector('.inc-qty').addEventListener('click', () => updateQty(item.id, 1));
-        element.querySelector('.remove-btn').addEventListener('click', () => removeFromCart(item.id));
+      // Event listeners
+      element.querySelector('.dec-qty').addEventListener('click', () => updateQty(item.id, -1));
+      element.querySelector('.inc-qty').addEventListener('click', () => updateQty(item.id, 1));
+      element.querySelector('.remove-btn').addEventListener('click', () => removeFromCart(item.id));
 
-        cartItemsContainer.insertBefore(element, cartEmptyState);
-      });
-    }
+      cartItemsContainer.insertBefore(element, cartEmptyState);
+    });
   }
 
   // Calculate prices
@@ -823,45 +704,39 @@ function updateCartUI() {
   const tax = subtotal * 0.08;
   const total = subtotal + tax;
 
-  if (cartSubtotal) cartSubtotal.innerText = `${subtotal.toFixed(2)} TND`;
-  if (cartTax) cartTax.innerText = `${tax.toFixed(2)} TND`;
-  if (cartTotal) cartTotal.innerText = `${total.toFixed(2)} TND`;
+  cartSubtotal.innerText = `${subtotal.toFixed(2)} TND`;
+  cartTax.innerText = `${tax.toFixed(2)} TND`;
+  cartTotal.innerText = `${total.toFixed(2)} TND`;
 }
 
 // Checkout Button Click Action
-if (checkoutBtn) {
-  checkoutBtn.addEventListener('click', () => {
-    if (cart.length === 0) return;
+checkoutBtn.addEventListener('click', () => {
+  if (cart.length === 0) return;
+  
+  checkoutBtn.disabled = true;
+  checkoutBtn.innerText = 'Transmission de la commande...';
+
+  // Simulate network latency
+  setTimeout(() => {
+    checkoutBtn.disabled = false;
+    checkoutBtn.innerText = 'Finaliser la Commande';
     
-    checkoutBtn.disabled = true;
-    checkoutBtn.innerText = 'Transmission de la commande...';
+    // Clear cart state
+    cart = [];
+    saveCart();
+    updateCartUI();
 
-    // Simulate network latency
-    setTimeout(() => {
-      checkoutBtn.disabled = false;
-      checkoutBtn.innerText = 'Finaliser la Commande';
-      
-      // Clear cart state
-      cart = [];
-      saveCart();
-      updateCartUI();
+    // Show Success screen
+    checkoutSuccessModal.classList.add('active');
+  }, 1800);
+});
 
-      // Show Success screen
-      if (checkoutSuccessModal) checkoutSuccessModal.classList.add('active');
-    }, 1800);
-  });
-}
+checkoutCloseSuccess.addEventListener('click', () => {
+  closeCart();
+});
 
-if (checkoutCloseSuccess) {
-  checkoutCloseSuccess.addEventListener('click', () => {
-    closeCart();
-  });
-}
-
-const cartEmptyShopCta = document.getElementById('cart-empty-shop-cta');
-if (cartEmptyShopCta) {
-  cartEmptyShopCta.addEventListener('click', closeCart);
-}
+// Shop trigger inside empty cart
+document.getElementById('cart-empty-shop-cta').addEventListener('click', closeCart);
 
 // --- COFFEE FINDER QUIZ LOGIC ---
 let activeQuizStep = 1;
@@ -891,18 +766,16 @@ document.querySelectorAll('.quiz-card').forEach(card => {
 // Navigate quiz steps
 function changeQuizStep(direction) {
   const currentStepElement = document.querySelector(`.quiz-step[data-step="${activeQuizStep}"]`);
-  if (currentStepElement) currentStepElement.classList.remove('active');
+  currentStepElement.classList.remove('active');
 
   activeQuizStep += direction;
 
   const nextStepElement = document.querySelector(`.quiz-step[data-step="${activeQuizStep}"]`);
-  if (nextStepElement) nextStepElement.classList.add('active');
+  nextStepElement.classList.add('active');
 
   // Update progress bar
-  if (quizProgress) {
-    const pct = (activeQuizStep / 3) * 100;
-    quizProgress.style.width = `${Math.min(pct, 100)}%`;
-  }
+  const pct = (activeQuizStep / 3) * 100;
+  quizProgress.style.width = `${Math.min(pct, 100)}%`;
 }
 
 // Navigation Triggers
@@ -914,12 +787,10 @@ document.querySelectorAll('.btn-quiz-prev').forEach(btn => {
 });
 
 // Finishing quiz: Matching Logic
-if (quizFinishBtn) {
-  quizFinishBtn.addEventListener('click', () => {
-    changeQuizStep(1); // Go to results step (4)
-    calculateQuizResult();
-  });
-}
+quizFinishBtn.addEventListener('click', () => {
+  changeQuizStep(1); // Go to results step (4)
+  calculateQuizResult();
+});
 
 function calculateQuizResult() {
   const { mood, flavor, base } = quizAnswers;
@@ -953,50 +824,44 @@ function calculateQuizResult() {
   if (!matchItem) return;
 
   // Render match layout
-  if (quizResultTitle) quizResultTitle.innerText = matchItem.name;
-  if (quizResultDesc) quizResultDesc.innerText = matchItem.description;
-  if (quizResultPrice) quizResultPrice.innerText = `${matchItem.price.toFixed(2)} TND`;
-  if (quizResultTag1) quizResultTag1.innerText = matchItem.tags[0] || 'Artisanal';
-  if (quizResultTag2) quizResultTag2.innerText = matchItem.tags[1] || 'Frais';
+  quizResultTitle.innerText = matchItem.name;
+  quizResultDesc.innerText = matchItem.description;
+  quizResultPrice.innerText = `${matchItem.price.toFixed(2)} TND`;
+  quizResultTag1.innerText = matchItem.tags[0] || 'Artisanal';
+  quizResultTag2.innerText = matchItem.tags[1] || 'Frais';
   
   // Set matching recommendation image paths
-  if (quizResultImage) quizResultImage.src = matchItem.image;
+  quizResultImage.src = matchItem.image;
 
   // Configure result add-to-cart btn
-  if (quizAddCartBtn) {
-    quizAddCartBtn.onclick = () => {
-      addToCart(matchItem.id);
-    };
-  }
+  quizAddCartBtn.onclick = () => {
+    addToCart(matchItem.id);
+  };
 }
 
 // Reset quiz state
-if (quizRetryBtn) {
-  quizRetryBtn.addEventListener('click', () => {
-    // Clear answers
-    quizAnswers = { mood: '', flavor: '', base: '' };
-    
-    // Reset active selections
-    document.querySelectorAll('.quiz-card').forEach(c => c.classList.remove('selected'));
-    
-    // Disable navigation buttons
-    const next1 = document.getElementById('quiz-next-1');
-    const next2 = document.getElementById('quiz-next-2');
-    if (next1) next1.disabled = true;
-    if (next2) next2.disabled = true;
-    if (quizFinishBtn) quizFinishBtn.disabled = true;
+quizRetryBtn.addEventListener('click', () => {
+  // Clear answers
+  quizAnswers = { mood: '', flavor: '', base: '' };
+  
+  // Reset active selections
+  document.querySelectorAll('.quiz-card').forEach(c => c.classList.remove('selected'));
+  
+  // Disable navigation buttons
+  document.getElementById('quiz-next-1').disabled = true;
+  document.getElementById('quiz-next-2').disabled = true;
+  quizFinishBtn.disabled = true;
 
-    // Transition to step 1
-    const activeStep = document.querySelector(`.quiz-step[data-step="${activeQuizStep}"]`);
-    if (activeStep) activeStep.classList.remove('active');
-    
-    activeQuizStep = 1;
-    const stepOne = document.querySelector('.quiz-step[data-step="1"]');
-    if (stepOne) stepOne.classList.add('active');
-    
-    if (quizProgress) quizProgress.style.width = '33%';
-  });
-}
+  // Transition to step 1
+  const activeStep = document.querySelector(`.quiz-step[data-step="${activeQuizStep}"]`);
+  if (activeStep) activeStep.classList.remove('active');
+  
+  activeQuizStep = 1;
+  const stepOne = document.querySelector('.quiz-step[data-step="1"]');
+  stepOne.classList.add('active');
+  
+  quizProgress.style.width = '33%';
+});
 
 // --- TESTIMONIAL CAROUSEL SLIDER ---
 function startCarouselTimer() {
@@ -1022,7 +887,6 @@ function navigateCarousel(direction) {
 }
 
 function updateCarouselUI() {
-  if (!reviewsCarouselTrack) return;
   // Translate track
   const translatePct = -currentSlide * 100;
   reviewsCarouselTrack.style.transform = `translateX(${translatePct}%)`;
@@ -1049,10 +913,8 @@ reviewsDots.forEach(dot => {
 
 // Pause slides on mouse enter, resume on mouse leave
 const sliderContainer = document.getElementById('reviews-slider');
-if (sliderContainer) {
-  sliderContainer.addEventListener('mouseenter', stopCarouselTimer);
-  sliderContainer.addEventListener('mouseleave', startCarouselTimer);
-}
+sliderContainer.addEventListener('mouseenter', stopCarouselTimer);
+sliderContainer.addEventListener('mouseleave', startCarouselTimer);
 
 // --- INTERSECTION OBSERVER FOR SCROLL REVEAL ---
 function setupScrollReveal() {
@@ -1078,63 +940,59 @@ function setupScrollReveal() {
 }
 
 // --- FORM SUBMISSION VALIDATION ---
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  const nameInput = document.getElementById('contact-name');
+  const emailInput = document.getElementById('contact-email');
+  const msgInput = document.getElementById('contact-message');
+  const submitBtn = document.getElementById('contact-submit');
+
+  // Basic Validation checks
+  if (!nameInput.value.trim() || !emailInput.value.trim() || !msgInput.value.trim()) {
+    showToast('Veuillez remplir tous les champs du formulaire de contact.');
+    return;
+  }
+
+  if (!validateEmail(emailInput.value.trim())) {
+    showToast('Veuillez entrer une adresse e-mail valide.');
+    return;
+  }
+
+  // Disable button while processing
+  submitBtn.disabled = true;
+  submitBtn.innerText = 'Envoi du message...';
+
+  // Mock server delay
+  setTimeout(() => {
+    showToast(`Merci de nous avoir contactés, ${nameInput.value.trim()} ! Nous vous répondrons sous peu.`, 'success');
     
-    const nameInput = document.getElementById('contact-name');
-    const emailInput = document.getElementById('contact-email');
-    const msgInput = document.getElementById('contact-message');
-    const submitBtn = document.getElementById('contact-submit');
-
-    // Basic Validation checks
-    if (!nameInput.value.trim() || !emailInput.value.trim() || !msgInput.value.trim()) {
-      showToast('Veuillez remplir tous les champs du formulaire de contact.');
-      return;
-    }
-
-    if (!validateEmail(emailInput.value.trim())) {
-      showToast('Veuillez entrer une adresse e-mail valide.');
-      return;
-    }
-
-    // Disable button while processing
-    submitBtn.disabled = true;
-    submitBtn.innerText = 'Envoi du message...';
-
-    // Mock server delay
-    setTimeout(() => {
-      showToast(`Merci de nous avoir contactés, ${nameInput.value.trim()} ! Nous vous répondrons sous peu.`, 'success');
-      
-      // Reset inputs
-      contactForm.reset();
-      submitBtn.disabled = false;
-      submitBtn.innerText = 'Envoyer le Message';
-    }, 1500);
-  });
-}
+    // Reset inputs
+    contactForm.reset();
+    submitBtn.disabled = false;
+    submitBtn.innerText = 'Envoyer le Message';
+  }, 1500);
+});
 
 // Newsletter footer submit handler
-if (newsletterForm) {
-  newsletterForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailInput = newsletterForm.querySelector('.newsletter-input');
-    const submitBtn = newsletterForm.querySelector('.newsletter-btn');
+newsletterForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailInput = newsletterForm.querySelector('.newsletter-input');
+  const submitBtn = newsletterForm.querySelector('.newsletter-btn');
 
-    if (!emailInput.value.trim() || !validateEmail(emailInput.value.trim())) {
-      showToast('Veuillez fournir une adresse e-mail valide pour la newsletter.');
-      return;
-    }
+  if (!emailInput.value.trim() || !validateEmail(emailInput.value.trim())) {
+    showToast('Veuillez fournir une adresse e-mail valide pour la newsletter.');
+    return;
+  }
 
-    submitBtn.disabled = true;
+  submitBtn.disabled = true;
 
-    setTimeout(() => {
-      showToast(`Abonnement réussi ! Bienvenue dans les Nouvelles du Foyer.`, 'success');
-      emailInput.value = '';
-      submitBtn.disabled = false;
-    }, 1200);
-  });
-}
+  setTimeout(() => {
+    showToast(`Abonnement réussi ! Bienvenue dans les Nouvelles du Foyer.`, 'success');
+    emailInput.value = '';
+    submitBtn.disabled = false;
+  }, 1200);
+});
 
 // Email Regex helper
 function validateEmail(email) {
