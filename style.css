@@ -1732,6 +1732,12 @@ footer {
   .navbar-container {
     padding: 16px 0;
   }
+  .nav-actions {
+    gap: 14px;
+  }
+  .btn-nav-order {
+    display: none;
+  }
   .mobile-menu-btn {
     display: flex;
   }
@@ -1785,6 +1791,49 @@ footer {
 }
 
 @media (max-width: 640px) {
+  .container {
+    padding: 0 22px;
+  }
+  .navbar-container {
+    padding: 14px 28px;
+  }
+  header.scrolled .navbar-container {
+    padding: 12px 28px;
+  }
+  .logo {
+    gap: 8px;
+  }
+  .logo-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  .logo-text {
+    font-size: 1.15rem;
+    letter-spacing: 0;
+  }
+  .logo-text span {
+    font-size: 0.65rem;
+    letter-spacing: 1.6px;
+    margin-top: -2px;
+  }
+  .nav-actions {
+    gap: 12px;
+  }
+  .cart-trigger {
+    width: 40px;
+    height: 40px;
+  }
+  .cart-trigger svg {
+    width: 18px;
+    height: 18px;
+  }
+  .mobile-menu-btn {
+    gap: 5px;
+    padding: 3px;
+  }
+  .mobile-menu-btn span {
+    width: 22px;
+  }
   .hero-content h1 {
     font-size: 2.8rem;
   }
